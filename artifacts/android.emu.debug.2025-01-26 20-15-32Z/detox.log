@@ -1,0 +1,1606 @@
+05:15:32.248 detox[90242] [90mB[39m node_modules/.bin/detox test --configuration android.emu.debug --record-logs all
+  data: {
+    "id": "0e7dd916-a48b-8fb0-67b2-3094cfec89ac",
+    "detoxConfig": {
+      "configurationName": "android.emu.debug",
+      "apps": {
+        "default": {
+          "type": "android.apk",
+          "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+          "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug",
+          "testBinaryPath": "android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk",
+          "reversePorts": [
+            8081
+          ]
+        }
+      },
+      "artifacts": {
+        "rootDir": "artifacts/android.emu.debug.2025-01-26 20-15-32Z",
+        "plugins": {
+          "log": {
+            "enabled": true,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "screenshot": {
+            "enabled": true,
+            "shouldTakeAutomaticSnapshots": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "video": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "instruments": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          },
+          "uiHierarchy": {
+            "enabled": false,
+            "keepOnlyFailedTestsArtifacts": false
+          }
+        }
+      },
+      "behavior": {
+        "init": {
+          "keepLockFile": false,
+          "reinstallApp": true,
+          "exposeGlobals": true
+        },
+        "cleanup": {
+          "shutdownDevice": false
+        },
+        "launchApp": "auto"
+      },
+      "cli": {
+        "recordLogs": "all",
+        "configuration": "android.emu.debug",
+        "start": true
+      },
+      "commands": [
+        {
+          "appName": "default",
+          "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug"
+        }
+      ],
+      "device": {
+        "type": "android.emulator",
+        "device": {
+          "avdName": "Pixel_9_API35"
+        }
+      },
+      "logger": {
+        "level": "info",
+        "overrideConsole": true,
+        "options": {
+          "showLoggerName": true,
+          "showPid": true,
+          "showLevel": false,
+          "showMetadata": false,
+          "basepath": "/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src",
+          "prefixers": {},
+          "stringifiers": {}
+        }
+      },
+      "testRunner": {
+        "retries": 0,
+        "forwardEnv": false,
+        "detached": false,
+        "bail": false,
+        "jest": {
+          "setupTimeout": 120000,
+          "teardownTimeout": 30000,
+          "retryAfterCircusRetries": false,
+          "reportWorkerAssign": true
+        },
+        "args": {
+          "$0": "jest",
+          "_": [],
+          "config": "e2e/jest.config.js",
+          "--": []
+        }
+      },
+      "session": {
+        "autoStart": true,
+        "debugSynchronization": 10000
+      }
+    },
+    "detoxIPCServer": "primary-90242",
+    "testResults": [],
+    "testSessionIndex": 0,
+    "workersCount": 0
+  }
+05:15:32.254 detox[90242] [90mi[39m Server path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + ipc.config.id /tmp/detox.primary-90242
+05:15:32.255 detox[90242] [90mi[39m starting server on  /tmp/detox.primary-90242 
+05:15:32.255 detox[90242] [90mi[39m starting TLS server false
+05:15:32.255 detox[90242] [90mi[39m starting server as Unix || Windows Socket
+05:15:32.258 detox[90242] [90mi[39m Detox server listening on localhost:44717...
+05:15:32.261 detox[90242] [90mi[39m Serialized the session state at: /tmp/0e7dd916-a48b-8fb0-67b2-3094cfec89ac.detox.json
+05:15:32.262 detox[90242] [90mB[39m jest --config e2e/jest.config.js
+05:15:32.651 detox[90255] [90mi[39m Service path not specified, so defaulting to ipc.config.socketRoot + ipc.config.appspace + id 
+05:15:32.652 detox[90255] [90mi[39m requested connection to  primary-90242 /tmp/detox.primary-90242
+05:15:32.652 detox[90255] [90mi[39m Connecting client on Unix Socket : /tmp/detox.primary-90242
+05:15:32.653 detox[90242] [90mi[39m ## socket connection to server detected ##
+05:15:32.654 detox[90255] [90mi[39m retrying reset
+05:15:32.655 detox[90255] [90mi[39m dispatching event to  primary-90242 /tmp/detox.primary-90242  :  registerContext , { id: 'secondary-90255' }
+05:15:32.657 detox[90242] [90mi[39m received event of :  registerContext { id: 'secondary-90255' }
+05:15:32.657 detox[90242] [90mi[39m dispatching event to socket  :  registerContextDone {
+  testResults: [],
+  testSessionIndex: 0,
+  unsafe_earlyTeardown: undefined
+}
+05:15:32.658 detox[90255] [90mi[39m ## received events ##
+05:15:32.658 detox[90255] [90mi[39m detected event registerContextDone { testResults: [], testSessionIndex: 0 }
+05:15:32.720 detox[90255] [90mB[39m e2e/starter.test.js
+05:15:32.731 detox[90255] [90mB[39m set up environment
+05:15:32.733 detox[90242] [90mi[39m received event of :  registerWorker { workerId: 'w1' }
+05:15:32.733 detox[90242] [90mi[39m dispatching event to socket  :  registerWorkerDone { workersCount: 1 }
+05:15:32.733 detox[90242] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-90242  :   sessionStateUpdate { workersCount: 1 }
+05:15:32.733 detox[90255] [90mi[39m dispatching event to  primary-90242 /tmp/detox.primary-90242  :  registerWorker , { workerId: 'w1' }
+05:15:32.734 detox[90255] [90mi[39m ## received events ##
+05:15:32.734 detox[90255] [90mi[39m detected event registerWorkerDone { workersCount: 1 }
+05:15:32.856 detox[90255] [90mi[39m ## received events ##
+05:15:32.856 detox[90255] [90mi[39m detected event sessionStateUpdate { workersCount: 1 }
+05:15:32.862 detox[90242] [90mB[39m connection :44717<->:35620
+05:15:32.864 detox[90255] [90mi[39m opened web socket to: ws://localhost:44717
+05:15:32.866 detox[90255] [90mi[39m send message
+  data: {"type":"login","params":{"sessionId":"a08f28b4-bd58-468d-65a0-2cac02acc698","role":"tester"},"messageId":0}
+05:15:32.867 detox[90242] [90mi[39m get
+  data: {"type":"login","params":{"sessionId":"a08f28b4-bd58-468d-65a0-2cac02acc698","role":"tester"},"messageId":0}
+05:15:32.867 detox[90242] [90mi[39m created session a08f28b4-bd58-468d-65a0-2cac02acc698
+05:15:32.868 detox[90242] [90mi[39m send
+  data: {
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": false
+    },
+    "messageId": 0
+  }
+05:15:32.868 detox[90242] [90mi[39m tester joined session a08f28b4-bd58-468d-65a0-2cac02acc698
+05:15:32.869 detox[90255] [90mi[39m get message
+  data: {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+   
+05:15:32.899 detox[90242] [90mi[39m received event of :  allocateDevice {
+  deviceConfig: { type: 'android.emulator', device: { avdName: 'Pixel_9_API35' } }
+}
+05:15:32.899 detox[90255] [90mi[39m dispatching event to  primary-90242 /tmp/detox.primary-90242  :  allocateDevice , {
+  deviceConfig: { type: 'android.emulator', device: { avdName: 'Pixel_9_API35' } }
+}
+05:15:32.919 detox[90242] [90mB[39m init
+  args: ()
+05:15:32.921 detox[90242] [90mE[39m init
+05:15:32.922 detox[90242] [90mB[39m allocate
+  data: {
+    "type": "android.emulator",
+    "device": {
+      "avdName": "Pixel_9_API35"
+    }
+  }
+05:15:32.922 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/emulator/emulator" -list-avds --verbose
+05:15:32.940 detox[90242] [90mi[39m Medium_Phone_API_35
+Pixel_9_API35
+Pixel_9_API_35
+Pixel_API_28_AOSP
+
+05:15:32.940 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/emulator/emulator" -version 
+05:15:33.030 detox[90242] [90mi[39m Android emulator version 35.3.11.0 (build_id 12836668) (CL:N/A)
+Copyright (C) 2006-2024 The Android Open Source Project and many others.
+This program is a derivative of the QEMU CPU emulator (www.qemu.org).
+
+  This software is licensed under the terms of the GNU General Public
+  License version 2, as published by the Free Software Foundation, and
+  may be copied, distributed, and modified under those terms.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+
+05:15:33.030 detox[90242] [90mi[39m Detected emulator binary version { major: 35, minor: 3, patch: 11, toString: [Function: toString] }
+05:15:33.031 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb"  devices
+05:15:33.034 detox[90242] [90mi[39m List of devices attached
+emulator-5556	device
+
+
+05:15:33.035 detox[90242] [90mi[39m port: 5556, host: localhost
+05:15:33.044 detox[90242] [90mi[39m Found a matching & free device emulator-5556
+05:15:33.044 detox[90242] [90mi[39m settled on emulator-5556 (Pixel_9_API35)
+  data: {
+    "id": "emulator-5556",
+    "adbName": "emulator-5556",
+    "name": "emulator-5556 (Pixel_9_API35)"
+  }
+05:15:33.044 detox[90242] [90mE[39m allocate
+05:15:33.044 detox[90242] [90mB[39m post-allocate: emulator-5556
+  data: {
+    "id": "emulator-5556",
+    "adbName": "emulator-5556",
+    "name": "emulator-5556 (Pixel_9_API35)"
+  }
+05:15:33.045 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "getprop dev.bootcomplete"
+05:15:33.082 detox[90242] [90mi[39m 1
+
+05:15:33.082 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "getprop ro.build.version.sdk"
+05:15:33.096 detox[90242] [90mi[39m 35
+
+05:15:33.096 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "settings put global animator_duration_scale 0"
+05:15:33.119 detox[90242] [90mi[39m 
+05:15:33.120 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "settings put global window_animation_scale 0"
+05:15:33.139 detox[90242] [90mi[39m 
+05:15:33.139 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "settings put global transition_animation_scale 0"
+05:15:33.157 detox[90242] [90mi[39m 
+05:15:33.157 detox[90242] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+05:15:33.193 detox[90242] [90mi[39m   mWakefulness=Awake
+  mWakefulnessChanging=false
+  mUseAutoSuspend=true
+  mWakeLockSummary=0x0
+  mWakeUpWhenPluggedOrUnpluggedConfig=false
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=-1
+  mUserInactiveOverrideFromWindowManager=false
+  mUserId=0
+  mWakeLockSummary=0x0
+  mUserInteractionBackoffMillis=60000
+
+05:15:33.194 detox[90242] [90mE[39m post-allocate: emulator-5556
+05:15:33.194 detox[90242] [90mi[39m dispatching event to socket  :  allocateDeviceDone {
+  deviceCookie: {
+    id: 'emulator-5556',
+    adbName: 'emulator-5556',
+    name: 'emulator-5556 (Pixel_9_API35)'
+  }
+}
+05:15:33.194 detox[90255] [90mi[39m ## received events ##
+05:15:33.194 detox[90255] [90mi[39m detected event allocateDeviceDone {
+  deviceCookie: {
+    id: 'emulator-5556',
+    adbName: 'emulator-5556',
+    name: 'emulator-5556 (Pixel_9_API35)'
+  }
+}
+05:15:33.209 detox[90255] [90mB[39m onBootDevice
+  args: ({"deviceId":"emulator-5556"})
+05:15:33.209 detox[90255] [90mE[39m onBootDevice
+05:15:33.210 detox[90255] [90mB[39m installUtilBinaries
+  args: ()
+05:15:33.210 detox[90255] [90mE[39m installUtilBinaries
+05:15:33.210 detox[90255] [90mB[39m selectApp
+  args: ("default")
+05:15:33.211 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/build-tools/36.0.0-rc4/aapt" dump badging "/home/alvin/Desktop/test/detox_react_native/android/app/build/outputs/apk/debug/app-debug.apk"
+05:15:33.228 detox[90255] [90mi[39m package: name='com.detox_react_native' versionCode='1' versionName='1.0' platformBuildVersionName='13' platformBuildVersionCode='33' compileSdkVersion='33' compileSdkVersionCodename='13'
+sdkVersion:'24'
+targetSdkVersion:'33'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+application-label:'detox_react_native'
+application-label-af:'detox_react_native'
+application-label-am:'detox_react_native'
+application-label-ar:'detox_react_native'
+application-label-as:'detox_react_native'
+application-label-az:'detox_react_native'
+application-label-be:'detox_react_native'
+application-label-bg:'detox_react_native'
+application-label-bn:'detox_react_native'
+application-label-bs:'detox_react_native'
+application-label-ca:'detox_react_native'
+application-label-cs:'detox_react_native'
+application-label-da:'detox_react_native'
+application-label-de:'detox_react_native'
+application-label-el:'detox_react_native'
+application-label-en-AU:'detox_react_native'
+application-label-en-CA:'detox_react_native'
+application-label-en-GB:'detox_react_native'
+application-label-en-IN:'detox_react_native'
+application-label-en-XC:'detox_react_native'
+application-label-es:'detox_react_native'
+application-label-es-US:'detox_react_native'
+application-label-et:'detox_react_native'
+application-label-eu:'detox_react_native'
+application-label-fa:'detox_react_native'
+application-label-fi:'detox_react_native'
+application-label-fr:'detox_react_native'
+application-label-fr-CA:'detox_react_native'
+application-label-gl:'detox_react_native'
+application-label-gu:'detox_react_native'
+application-label-hi:'detox_react_native'
+application-label-hr:'detox_react_native'
+application-label-hu:'detox_react_native'
+application-label-hy:'detox_react_native'
+application-label-in:'detox_react_native'
+application-label-is:'detox_react_native'
+application-label-it:'detox_react_native'
+application-label-iw:'detox_react_native'
+application-label-ja:'detox_react_native'
+application-label-ka:'detox_react_native'
+application-label-kk:'detox_react_native'
+application-label-km:'detox_react_native'
+application-label-kn:'detox_react_native'
+application-label-ko:'detox_react_native'
+application-label-ky:'detox_react_native'
+application-label-lo:'detox_react_native'
+application-label-lt:'detox_react_native'
+application-label-lv:'detox_react_native'
+application-label-mk:'detox_react_native'
+application-label-ml:'detox_react_native'
+application-label-mn:'detox_react_native'
+application-label-mr:'detox_react_native'
+application-label-ms:'detox_react_native'
+application-label-my:'detox_react_native'
+application-label-nb:'detox_react_native'
+application-label-ne:'detox_react_native'
+application-label-nl:'detox_react_native'
+application-label-or:'detox_react_native'
+application-label-pa:'detox_react_native'
+application-label-pl:'detox_react_native'
+application-label-pt:'detox_react_native'
+application-label-pt-BR:'detox_react_native'
+application-label-pt-PT:'detox_react_native'
+application-label-ro:'detox_react_native'
+application-label-ru:'detox_react_native'
+application-label-si:'detox_react_native'
+application-label-sk:'detox_react_native'
+application-label-sl:'detox_react_native'
+application-label-sq:'detox_react_native'
+application-label-sr:'detox_react_native'
+application-label-sr-Latn:'detox_react_native'
+application-label-sv:'detox_react_native'
+application-label-sw:'detox_react_native'
+application-label-ta:'detox_react_native'
+application-label-te:'detox_react_native'
+application-label-th:'detox_react_native'
+application-label-tl:'detox_react_native'
+application-label-tr:'detox_react_native'
+application-label-uk:'detox_react_native'
+application-label-ur:'detox_react_native'
+application-label-uz:'detox_react_native'
+application-label-vi:'detox_react_native'
+application-label-zh-CN:'detox_react_native'
+application-label-zh-HK:'detox_react_native'
+application-label-zh-TW:'detox_react_native'
+application-label-zu:'detox_react_native'
+application-icon-160:'res/mipmap-mdpi-v4/ic_launcher.png'
+application-icon-240:'res/mipmap-hdpi-v4/ic_launcher.png'
+application-icon-320:'res/mipmap-xhdpi-v4/ic_launcher.png'
+application-icon-480:'res/mipmap-xxhdpi-v4/ic_launcher.png'
+application-icon-640:'res/mipmap-xxxhdpi-v4/ic_launcher.png'
+application: label='detox_react_native' icon='res/mipmap-mdpi-v4/ic_launcher.png'
+application-debuggable
+launchable-activity: name='com.detox_react_native.MainActivity'  label='detox_react_native' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.wifi'
+  uses-implied-feature: name='android.hardware.wifi' reason='requested android.permission.ACCESS_WIFI_STATE permission'
+main
+other-activities
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '160' '240' '320' '480' '640'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'
+
+05:15:33.228 detox[90255] [90mE[39m selectApp
+05:15:33.228 detox[90255] [90mB[39m uninstallApp
+  args: ()
+05:15:33.228 detox[90255] [90mB[39m onBeforeUninstallApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native"})
+05:15:33.229 detox[90255] [90mE[39m onBeforeUninstallApp
+05:15:33.229 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "pm list packages com.detox_react_native"
+05:15:33.245 detox[90255] [90mi[39m package:com.detox_react_native.test
+package:com.detox_react_native
+
+05:15:33.245 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 uninstall com.detox_react_native
+05:15:33.329 detox[90255] [90mi[39m Success
+
+05:15:33.329 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "pm list packages com.detox_react_native.test"
+05:15:33.464 detox[90255] [90mi[39m package:com.detox_react_native.test
+
+05:15:33.464 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 uninstall com.detox_react_native.test
+05:15:33.685 detox[90255] [90mi[39m Success
+
+05:15:33.685 detox[90255] [90mE[39m uninstallApp
+05:15:33.685 detox[90255] [90mB[39m selectApp
+  args: ("default")
+05:15:33.685 detox[90255] [90mB[39m terminateApp
+  args: ()
+05:15:33.686 detox[90255] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native"})
+05:15:33.686 detox[90255] [90mE[39m onBeforeTerminateApp
+05:15:33.686 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "am force-stop com.detox_react_native"
+05:15:33.706 detox[90255] [90mi[39m 
+05:15:33.706 detox[90255] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native"})
+05:15:33.707 detox[90255] [90mE[39m onTerminateApp
+05:15:33.707 detox[90255] [90mE[39m terminateApp
+05:15:33.707 detox[90255] [90mE[39m selectApp
+05:15:33.707 detox[90255] [90mB[39m installApp
+  args: ()
+05:15:33.707 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/build-tools/36.0.0-rc4/aapt" dump xmlstrings "/home/alvin/Desktop/test/detox_react_native/android/app/build/outputs/apk/debug/app-debug.apk" AndroidManifest.xml
+05:15:33.711 detox[90255] [90mi[39m String pool of 56 unique UTF-16 non-sorted strings, 56 entries and 0 styles using 2556 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: debuggable
+String #5: exported
+String #6: authorities
+String #7: launchMode
+String #8: configChanges
+String #9: value
+String #10: minSdkVersion
+String #11: versionCode
+String #12: versionName
+String #13: windowSoftInputMode
+String #14: targetSdkVersion
+String #15: allowBackup
+String #16: extractNativeLibs
+String #17: usesCleartextTraffic
+String #18: networkSecurityConfig
+String #19: roundIcon
+String #20: compileSdkVersion
+String #21: compileSdkVersionCodename
+String #22: appComponentFactory
+String #23: 1.0
+String #24: 13
+String #25: action
+String #26: activity
+String #27: android
+String #28: android.intent.action.MAIN
+String #29: android.intent.category.LAUNCHER
+String #30: android.permission.ACCESS_WIFI_STATE
+String #31: android.permission.INTERNET
+String #32: android.permission.SYSTEM_ALERT_WINDOW
+String #33: androidx.core.app.CoreComponentFactory
+String #34: androidx.emoji2.text.EmojiCompatInitializer
+String #35: androidx.lifecycle.ProcessLifecycleInitializer
+String #36: androidx.startup
+String #37: androidx.startup.InitializationProvider
+String #38: application
+String #39: category
+String #40: com.detox_react_native
+String #41: com.detox_react_native.MainActivity
+String #42: com.detox_react_native.MainApplication
+String #43: com.detox_react_native.androidx-startup
+String #44: com.facebook.react.devsupport.DevSettingsActivity
+String #45: com.facebook.soloader.enabled
+String #46: http://schemas.android.com/apk/res/android
+String #47: intent-filter
+String #48: manifest
+String #49: meta-data
+String #50: package
+String #51: platformBuildVersionCode
+String #52: platformBuildVersionName
+String #53: provider
+String #54: uses-permission
+String #55: uses-sdk
+
+05:15:33.712 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/build-tools/36.0.0-rc4/aapt" dump xmlstrings "/home/alvin/Desktop/test/detox_react_native/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk" AndroidManifest.xml
+05:15:33.716 detox[90255] [90mi[39m String pool of 43 unique UTF-16 non-sorted strings, 43 entries and 0 styles using 2156 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: debuggable
+String #4: exported
+String #5: priority
+String #6: targetPackage
+String #7: handleProfiling
+String #8: functionalTest
+String #9: minSdkVersion
+String #10: targetSdkVersion
+String #11: extractNativeLibs
+String #12: compileSdkVersion
+String #13: compileSdkVersionCodename
+String #14: 13
+String #15: Tests for com.detox_react_native
+String #16: activity
+String #17: android
+String #18: android.intent.category.LAUNCHER
+String #19: android.permission.REORDER_TASKS
+String #20: android.test.runner
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #22: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #23: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #24: androidx.test.orchestrator
+String #25: androidx.test.runner.AndroidJUnitRunner
+String #26: androidx.test.services
+String #27: application
+String #28: category
+String #29: com.detox_react_native
+String #30: com.detox_react_native.test
+String #31: com.google.android.apps.common.testing.services
+String #32: http://schemas.android.com/apk/res/android
+String #33: instrumentation
+String #34: intent-filter
+String #35: manifest
+String #36: package
+String #37: platformBuildVersionCode
+String #38: platformBuildVersionName
+String #39: queries
+String #40: uses-library
+String #41: uses-permission
+String #42: uses-sdk
+
+05:15:33.716 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "rm -fr /data/local/tmp/detox"
+05:15:33.762 detox[90255] [90mi[39m 
+05:15:33.763 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "mkdir -p /data/local/tmp/detox"
+05:15:33.777 detox[90255] [90mi[39m 
+05:15:33.777 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 push "/home/alvin/Desktop/test/detox_react_native/android/app/build/outputs/apk/debug/app-debug.apk" "/data/local/tmp/detox/Application.apk"
+05:15:34.438 detox[90255] [90mi[39m /home/alvin/Desktop/test/detox_react_native/android/app/build/outputs/apk/debug/app-debug.apk: 1 file pushed, 0 skipped. 353.6 MB/s (166195970 bytes in 0.448s)
+
+05:15:34.438 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "getprop ro.build.version.sdk"
+05:15:34.459 detox[90255] [90mi[39m 35
+
+05:15:34.462 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell pm install -r -g -t /data/local/tmp/detox/Application.apk
+05:15:35.936 detox[90255] [90mi[39m Success
+
+05:15:35.944 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell pm install -r -g -t /data/local/tmp/detox/Application.apk exited with code #0
+05:15:35.945 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 push "/home/alvin/Desktop/test/detox_react_native/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk" "/data/local/tmp/detox/Test.apk"
+05:15:35.989 detox[90255] [90mi[39m /home/alvin/Desktop/test/detox_react_native/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk: 1 file pushed, 0 skipped. 408.1 MB/s (5107635 bytes in 0.012s)
+
+05:15:35.991 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell pm install -r -g -t /data/local/tmp/detox/Test.apk
+05:15:36.096 detox[90255] [90mi[39m Success
+
+05:15:36.097 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell pm install -r -g -t /data/local/tmp/detox/Test.apk exited with code #0
+05:15:36.097 detox[90255] [90mB[39m reverseTcpPort
+  args: (8081)
+05:15:36.097 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 reverse tcp:8081 tcp:8081
+05:15:36.101 detox[90255] [90mi[39m 
+05:15:36.101 detox[90255] [90mE[39m reverseTcpPort
+05:15:36.101 detox[90255] [90mE[39m installApp
+05:15:36.101 detox[90255] [90mB[39m selectApp
+  args: ("default")
+05:15:36.102 detox[90255] [90mB[39m terminateApp
+  args: ()
+05:15:36.102 detox[90255] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native"})
+05:15:36.102 detox[90255] [90mE[39m onBeforeTerminateApp
+05:15:36.102 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "am force-stop com.detox_react_native"
+05:15:36.137 detox[90255] [90mi[39m 
+05:15:36.138 detox[90255] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native"})
+05:15:36.138 detox[90255] [90mE[39m onTerminateApp
+05:15:36.138 detox[90255] [90mE[39m terminateApp
+05:15:36.138 detox[90255] [90mE[39m selectApp
+05:15:36.138 detox[90255] [90mE[39m set up environment
+05:15:36.325 detox[90255] [90mi[39m starter.test.js is assigned to emulator-5556 (Pixel_9_API35)
+05:15:36.326 detox[90255] [90mB[39m run the tests
+05:15:36.326 detox[90255] [90mB[39m onRunDescribeStart
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+05:15:36.327 detox[90255] [90mE[39m onRunDescribeStart
+05:15:36.327 detox[90255] [90mB[39m App Detox Tests
+05:15:36.327 detox[90255] [90mB[39m onRunDescribeStart
+  args: ({"name":"App Detox Tests"})
+05:15:36.327 detox[90255] [90mE[39m onRunDescribeStart
+05:15:36.328 detox[90255] [90mB[39m beforeAll
+05:15:36.331 detox[90255] [90mB[39m launchApp
+  args: ({"newInstance":true,"launchArgs":{"timeout":60000}})
+05:15:36.331 detox[90255] [90mB[39m terminateApp
+  args: ("com.detox_react_native")
+05:15:36.331 detox[90255] [90mB[39m onBeforeTerminateApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native"})
+05:15:36.331 detox[90255] [90mE[39m onBeforeTerminateApp
+05:15:36.331 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "am force-stop com.detox_react_native"
+05:15:36.352 detox[90255] [90mi[39m 
+05:15:36.352 detox[90255] [90mB[39m onTerminateApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native"})
+05:15:36.353 detox[90255] [90mE[39m onTerminateApp
+05:15:36.353 detox[90255] [90mE[39m terminateApp
+05:15:36.353 detox[90255] [90mB[39m onBeforeLaunchApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native","launchArgs":{"detoxServer":"ws://localhost:44717","detoxSessionId":"a08f28b4-bd58-468d-65a0-2cac02acc698","timeout":60000}})
+05:15:36.353 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "date +\"%m-%d %T.000\""
+05:15:36.368 detox[90255] [90mi[39m 01-27 05:15:35.000
+
+05:15:36.368 detox[90255] [90mE[39m onBeforeLaunchApp
+05:15:36.368 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 reverse tcp:44717 tcp:44717
+05:15:36.373 detox[90255] [90mi[39m 44717
+
+05:15:36.374 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "pm list instrumentation"
+05:15:36.390 detox[90255] [90mi[39m instrumentation:com.detox_react_native.test/androidx.test.runner.AndroidJUnitRunner (target=com.detox_react_native)
+
+05:15:36.391 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell am instrument -w -r -e detoxServer ws://localhost:44717 -e detoxSessionId a08f28b4-bd58-468d-65a0-2cac02acc698 -e timeout 'NjAwMDA=' -e debug false com.detox_react_native.test/androidx.test.runner.AndroidJUnitRunner
+05:15:36.892 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "ps | grep \"com\.detox_react_native$\""
+05:15:36.927 detox[90255] [90mi[39m u0_a166       7928   371   16690452 130228 0                   0 R com.detox_react_native
+
+05:15:36.927 detox[90255] [90mB[39m onLaunchApp
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native","launchArgs":{"detoxServer":"ws://localhost:44717","detoxSessionId":"a08f28b4-bd58-468d-65a0-2cac02acc698","timeout":60000},"pid":7928})
+05:15:36.928 detox[90255] [90mi[39m starting ADBLogcatRecording
+05:15:36.929 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:35.000\" --pid=7928 -f /sdcard/51532895_0.log"
+05:15:36.929 detox[90255] [90mE[39m onLaunchApp
+05:15:37.230 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell du /sdcard/51532895_0.log
+05:15:37.242 detox[90255] [90mi[39m 4	/sdcard/51532895_0.log
+
+05:15:37.644 detox[90255] [90mi[39m INSTRUMENTATION_STATUS: class=com.detox_react_native.DetoxTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.detox_react_native.DetoxTest:
+INSTRUMENTATION_STATUS: test=runDetoxTests
+INSTRUMENTATION_STATUS_CODE: 1
+
+05:15:40.659 detox[90242] [90mB[39m connection :44717<->:32921
+05:15:40.660 detox[90242] [90mi[39m get
+  data: {"messageId":0,"type":"login","params":{"role":"app","sessionId":"a08f28b4-bd58-468d-65a0-2cac02acc698"}}
+05:15:40.660 detox[90242] [90mi[39m send
+  data: {
+    "messageId": 0,
+    "type": "loginSuccess",
+    "params": {
+      "testerConnected": true,
+      "appConnected": true
+    }
+  }
+05:15:40.661 detox[90242] [90mi[39m app joined session a08f28b4-bd58-468d-65a0-2cac02acc698
+05:15:40.661 detox[90242] [90mi[39m send
+  data: {
+    "type": "appConnected"
+  }
+05:15:40.661 detox[90255] [90mi[39m get message
+  data: {"type":"appConnected"}
+   
+05:15:40.662 detox[90255] [90mi[39m send message
+  data: {"type":"isReady","params":{},"messageId":-1000}
+05:15:40.664 detox[90242] [90mi[39m get
+  data: {"type":"isReady","params":{},"messageId":-1000}
+05:15:40.664 detox[90242] [90mi[39m send
+  data: {
+    "type": "isReady",
+    "params": {},
+    "messageId": -1000
+  }
+05:15:41.349 detox[90242] [90mi[39m get
+  data: {"messageId":-1000,"type":"ready","params":{}}
+05:15:41.349 detox[90242] [90mi[39m send
+  data: {
+    "messageId": -1000,
+    "type": "ready",
+    "params": {}
+  }
+05:15:41.350 detox[90255] [90mi[39m get message
+  data: {"messageId":-1000,"type":"ready","params":{}}
+   
+05:15:41.350 detox[90255] [90mB[39m onAppReady
+  args: ({"deviceId":"emulator-5556","bundleId":"com.detox_react_native","pid":7928})
+05:15:41.350 detox[90255] [90mE[39m onAppReady
+05:15:41.350 detox[90255] [90mE[39m launchApp
+05:15:41.350 detox[90255] [90mE[39m beforeAll
+05:15:41.351 detox[90255] [90mB[39m should display welcome message
+05:15:41.351 detox[90255] [90mi[39m App Detox Tests: should display welcome message
+05:15:41.353 detox[90255] [90mB[39m onTestStart
+  args: ({"title":"should display welcome message","fullName":"App Detox Tests should display welcome message","status":"running","invocations":1})
+05:15:41.353 detox[90255] [90mi[39m stopping ADBLogcatRecording
+05:15:41.353 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "date +\"%m-%d %T.000\""
+05:15:41.357 detox[90255] [90mi[39m INSTRUMENTATION_STATUS: class=com.detox_react_native.DetoxTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+
+05:15:41.396 detox[90255] [90mi[39m INSTRUMENTATION_STATUS: stack=java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/enums/EnumEntriesKt;
+	at com.wix.detox.reactnative.idlingresources.factory.IdlingResourcesName.<clinit>(IdlingResourcesName.kt:9)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.unregisterIdlingResources(ReactNativeIdlingResources.kt:115)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.unregisterAll(ReactNativeIdlingResources.kt:45)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources$registerAll$1.invokeSuspend(ReactNativeIdlingResources.kt:33)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:284)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.registerAll(ReactNativeIdlingResources.kt:31)
+	at com.wix.detox.reactnative.ReactNativeExtension.setupIdlingResources(ReactNativeExtension.kt:144)
+	at com.wix.detox.reactnative.ReactNativeExtension.enableOrDisableSynchronization(ReactNativeExtension.kt:131)
+	at com.wix.detox.reactnative.ReactNativeExtension.waitForRNBootstrap(ReactNativeExtension.kt:39)
+	at com.wix.detox.DetoxMain.launchActivity(DetoxMain.kt:127)
+	at com.wix.detox.DetoxMain.launchActivityOnCue(DetoxMain.kt:53)
+	at com.wix.detox.DetoxMain.run(DetoxMain.kt:33)
+	at com.wix.detox.Detox.runTests(Detox.java:127)
+	at com.wix.detox.Detox.runTests(Detox.java:94)
+	at com.detox_react_native.DetoxTest.runDetoxTests(DetoxTest.java:27)
+	... 33 trimmed
+Caused by: java.lang.ClassNotFoundException: Didn't find class "kotlin.enums.EnumEntriesKt" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.base.jar", zip file "/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk", zip file "/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk"],nativeLibraryDirectories=[/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/lib/x86_64, /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/lib/x86_64, /data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk!/lib/x86_64, /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:637)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:573)
+	... 56 more
+
+INSTRUMENTATION_STATUS: stream=
+Error in runDetoxTests(com.detox_react_native.DetoxTest):
+java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/enums/EnumEntriesKt;
+	at com.wix.detox.reactnative.idlingresources.factory.IdlingResourcesName.<clinit>(IdlingResourcesName.kt:9)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.unregisterIdlingResources(ReactNativeIdlingResources.kt:115)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.unregisterAll(ReactNativeIdlingResources.kt:45)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources$registerAll$1.invokeSuspend(ReactNativeIdlingResources.kt:33)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:284)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.registerAll(ReactNativeIdlingResources.kt:31)
+	at com.wix.detox.reactnative.ReactNativeExtension.setupIdlingResources(ReactNativeExtension.kt:144)
+	at com.wix.detox.reactnative.ReactNativeExtension.enableOrDisableSynchronization(ReactNativeExtension.kt:131)
+	at com.wix.detox.reactnative.ReactNativeExtension.waitForRNBootstrap(ReactNativeExtension.kt:39)
+	at com.wix.detox.DetoxMain.launchActivity(DetoxMain.kt:127)
+	at com.wix.detox.DetoxMain.launchActivityOnCue(DetoxMain.kt:53)
+	at com.wix.detox.DetoxMain.run(DetoxMain.kt:33)
+	at com.wix.detox.Detox.runTests(Detox.java:127)
+	at com.wix.detox.Detox.runTests(Detox.java:94)
+	at com.detox_react_native.DetoxTest.runDetoxTests(DetoxTest.java:27)
+	... 33 trimmed
+Caused by: java.lang.ClassNotFoundException: Didn't find class "kotlin.enums.EnumEntriesKt" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.base.jar", zip file "/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk", zip file "/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk"],nativeLibraryDirectories=[/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/lib/x86_64, /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/lib/x86_64, /data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk!/lib/x86_64, /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:637)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:573)
+	... 56 more
+
+INSTRUMENTATION_STATUS: test=runDetoxTests
+INSTRUMENTATION_STATUS_CODE: -2
+
+05:15:41.399 detox[90255] [90mi[39m 01-27 05:15:41.000
+
+05:15:41.401 detox[90255] [90mi[39m sending SIGINT to: /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell logcat -T "01-27 05:15:35.000" --pid=7928 -f /sdcard/51532895_0.log
+05:15:41.402 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:35.000\" --pid=7928 -f /sdcard/51532895_0.log" terminated with SIGINT
+05:15:41.403 detox[90255] [90mi[39m starting ADBLogcatRecording
+05:15:41.406 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:41.000\" --pid=7928 -f /sdcard/51532895_1.log"
+05:15:41.406 detox[90255] [90mE[39m onTestStart
+05:15:41.407 detox[90255] [90mB[39m beforeEach
+05:15:41.407 detox[90255] [90mE[39m beforeEach
+05:15:41.407 detox[90255] [90mB[39m beforeEach
+05:15:41.408 detox[90255] [90mE[39m beforeEach
+05:15:41.408 detox[90255] [90mB[39m test_fn
+05:15:41.414 detox[90255] [90mi[39m send message
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["text-welcome",{"type":"boolean","value":false}]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":1}
+05:15:41.418 detox[90242] [90mi[39m get
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["text-welcome",{"type":"boolean","value":false}]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":1}
+05:15:41.418 detox[90242] [90mi[39m send
+  data: {
+    "type": "invoke",
+    "params": {
+      "target": {
+        "type": "Class",
+        "value": "com.wix.detox.espresso.DetoxAssertion"
+      },
+      "method": "assertMatcher",
+      "args": [
+        {
+          "type": "Invocation",
+          "value": {
+            "target": {
+              "type": "Class",
+              "value": "androidx.test.espresso.Espresso"
+            },
+            "method": "onView",
+            "args": [
+              {
+                "type": "Invocation",
+                "value": {
+                  "target": {
+                    "type": "Class",
+                    "value": "com.wix.detox.espresso.DetoxMatcher"
+                  },
+                  "method": "matcherForTestId",
+                  "args": [
+                    "text-welcome",
+                    {
+                      "type": "boolean",
+                      "value": false
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "Invocation",
+          "value": {
+            "target": {
+              "type": "Class",
+              "value": "com.wix.detox.espresso.DetoxMatcher"
+            },
+            "method": "matcherForSufficientlyVisible",
+            "args": [
+              {
+                "type": "Integer",
+                "value": 75
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "messageId": 1
+  }
+05:15:41.418 detox[90255] [90mB[39m expect element to be visible
+  data: {
+    "target": {
+      "type": "Class",
+      "value": "com.wix.detox.espresso.DetoxAssertion"
+    },
+    "method": "assertMatcher",
+    "args": [
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "androidx.test.espresso.Espresso"
+          },
+          "method": "onView",
+          "args": [
+            {
+              "type": "Invocation",
+              "value": {
+                "target": {
+                  "type": "Class",
+                  "value": "com.wix.detox.espresso.DetoxMatcher"
+                },
+                "method": "matcherForTestId",
+                "args": [
+                  "text-welcome",
+                  {
+                    "type": "boolean",
+                    "value": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxMatcher"
+          },
+          "method": "matcherForSufficientlyVisible",
+          "args": [
+            {
+              "type": "Integer",
+              "value": 75
+            }
+          ]
+        }
+      }
+    ]
+  }
+05:15:41.478 detox[90255] [90mi[39m INSTRUMENTATION_RESULT: stream=
+
+Time: 3.82
+There was 1 failure:
+1) runDetoxTests(com.detox_react_native.DetoxTest)
+java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/enums/EnumEntriesKt;
+	at com.wix.detox.reactnative.idlingresources.factory.IdlingResourcesName.<clinit>(IdlingResourcesName.kt:9)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.unregisterIdlingResources(ReactNativeIdlingResources.kt:115)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.unregisterAll(ReactNativeIdlingResources.kt:45)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources$registerAll$1.invokeSuspend(ReactNativeIdlingResources.kt:33)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:284)
+	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)
+	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)
+	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.registerAll(ReactNativeIdlingResources.kt:31)
+	at com.wix.detox.reactnative.ReactNativeExtension.setupIdlingResources(ReactNativeExtension.kt:144)
+	at com.wix.detox.reactnative.ReactNativeExtension.enableOrDisableSynchronization(ReactNativeExtension.kt:131)
+	at com.wix.detox.reactnative.ReactNativeExtension.waitForRNBootstrap(ReactNativeExtension.kt:39)
+	at com.wix.detox.DetoxMain.launchActivity(DetoxMain.kt:127)
+	at com.wix.detox.DetoxMain.launchActivityOnCue(DetoxMain.kt:53)
+	at com.wix.detox.DetoxMain.run(DetoxMain.kt:33)
+	at com.wix.detox.Detox.runTests(Detox.java:127)
+	at com.wix.detox.Detox.runTests(Detox.java:94)
+	at com.detox_react_native.DetoxTest.runDetoxTests(DetoxTest.java:27)
+	... 33 trimmed
+Caused by: java.lang.ClassNotFoundException: Didn't find class "kotlin.enums.EnumEntriesKt" on path: DexPathList[[zip file "/system/framework/android.test.runner.jar", zip file "/system/framework/android.test.mock.jar", zip file "/system/framework/android.test.base.jar", zip file "/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk", zip file "/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk"],nativeLibraryDirectories=[/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/lib/x86_64, /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/lib/x86_64, /data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk!/lib/x86_64, /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]
+	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:637)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:573)
+	... 56 more
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1
+
+05:15:41.511 detox[90242] [90mi[39m app exited session a08f28b4-bd58-468d-65a0-2cac02acc698
+05:15:41.512 detox[90242] [90mi[39m send
+  data: {
+    "type": "appDisconnected"
+  }
+05:15:41.512 detox[90242] [90mE[39m connection :44717<->:32921
+05:15:41.512 detox[90255] [90mi[39m get message
+  data: {"type":"appDisconnected"}
+   
+05:15:41.513 detox[90255] [90mE[39m expect element to be visible
+  error: The pending request #1 ("invoke") has been rejected due to the following error:
+  
+  The app has unexpectedly disconnected from Detox server.
+05:15:41.513 detox[90255] [90mB[39m onTestFnFailure
+  args: ({"error":{"name":"DetoxRuntimeError"}})
+05:15:41.514 detox[90255] [90mE[39m onTestFnFailure
+05:15:41.514 detox[90255] [90mE[39m test_fn
+  error: The pending request #1 ("invoke") has been rejected due to the following error:
+  
+  The app has unexpectedly disconnected from Detox server.
+05:15:41.515 detox[90255] [90mB[39m onTestDone
+  args: ({"title":"should display welcome message","fullName":"App Detox Tests should display welcome message","status":"failed","invocations":1,"timedOut":false})
+05:15:41.515 detox[90255] [90mi[39m stopping ADBLogcatRecording
+05:15:41.519 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell am instrument -w -r -e detoxServer ws://localhost:44717 -e detoxSessionId a08f28b4-bd58-468d-65a0-2cac02acc698 -e timeout 'NjAwMDA=' -e debug false com.detox_react_native.test/androidx.test.runner.AndroidJUnitRunner exited with code #0
+05:15:41.519 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 reverse --remove tcp:44717
+05:15:41.523 detox[90255] [90mi[39m 
+05:15:41.706 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell du /sdcard/51532895_1.log
+05:15:41.724 detox[90255] [90mi[39m 4	/sdcard/51532895_1.log
+
+05:15:41.724 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "date +\"%m-%d %T.000\""
+05:15:41.737 detox[90255] [90mi[39m 01-27 05:15:41.000
+
+05:15:41.738 detox[90255] [90mi[39m sending SIGINT to: /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell logcat -T "01-27 05:15:41.000" --pid=7928 -f /sdcard/51532895_1.log
+05:15:41.739 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:41.000\" --pid=7928 -f /sdcard/51532895_1.log" terminated with SIGINT
+05:15:41.741 detox[90255] [90mE[39m onTestDone
+05:15:41.741 detox[90255] [90mE[39m should display welcome message
+05:15:41.741 detox[90255] [90mi[39m App Detox Tests: should display welcome message [FAIL]
+05:15:41.742 detox[90255] [90mB[39m should type text in input field
+05:15:41.742 detox[90255] [90mi[39m App Detox Tests: should type text in input field
+05:15:41.742 detox[90255] [90mB[39m onTestStart
+  args: ({"title":"should type text in input field","fullName":"App Detox Tests should type text in input field","status":"running","invocations":1})
+05:15:41.743 detox[90255] [90mi[39m starting ADBLogcatRecording
+05:15:41.744 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:41.000\" --pid=7928 -f /sdcard/51532895_2.log"
+05:15:41.744 detox[90255] [90mE[39m onTestStart
+05:15:41.744 detox[90255] [90mB[39m beforeEach
+05:15:41.744 detox[90255] [90mE[39m beforeEach
+05:15:41.744 detox[90255] [90mB[39m beforeEach
+05:15:41.744 detox[90255] [90mE[39m beforeEach
+05:15:41.745 detox[90255] [90mB[39m test_fn
+05:15:41.745 detox[90255] [90mi[39m send message
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["input-field",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"typeText","args":["Hello Detox"]}}]},"messageId":2}
+05:15:41.746 detox[90242] [90mi[39m get
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["input-field",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"typeText","args":["Hello Detox"]}}]},"messageId":2}
+05:15:41.746 detox[90255] [90mB[39m type input text: "Hello Detox"
+  data: {
+    "target": {
+      "type": "Class",
+      "value": "com.wix.detox.espresso.EspressoDetox"
+    },
+    "method": "perform",
+    "args": [
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxMatcher"
+          },
+          "method": "matcherForTestId",
+          "args": [
+            "input-field",
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        }
+      },
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxViewActions"
+          },
+          "method": "typeText",
+          "args": [
+            "Hello Detox"
+          ]
+        }
+      }
+    ]
+  }
+05:15:41.746 detox[90255] [90mi[39m saving ADBLogcatRecording to: artifacts/android.emu.debug.2025-01-26 20-15-32Z/✗ App Detox Tests should display welcome message/device.log
+05:15:41.747 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 pull "/sdcard/51532895_1.log" "artifacts/android.emu.debug.2025-01-26 20-15-32Z/✗ App Detox Tests should display welcome message/device.log"
+05:15:41.748 detox[90242] [90mi[39m send
+  data: {
+    "type": "serverError",
+    "params": {
+      "error": {
+        "name": "DetoxRuntimeError",
+        "message": "Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 2\n}",
+        "stack": "DetoxRuntimeError: Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 2\n}\n    at Object.maybeAppWasNotLaunched (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/errors/longreads/failedToReachTheApp.js:22:10)\n    at TesterConnectionHandler.handle (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/handlers/TesterConnectionHandler.js:32:31)\n    at DetoxConnection._onMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/DetoxConnection.js:76:23)\n    at WebSocket.emit (node:events:519:28)\n    at Receiver.receiverOnMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1070:20)\n    at Receiver.emit (node:events:519:28)\n    at Receiver.dataMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:517:14)\n    at Receiver.getData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:435:17)\n    at Receiver.startLoop (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:143:22)\n    at Receiver._write (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:78:10)\n    at writeOrBuffer (node:internal/streams/writable:570:12)\n    at _write (node:internal/streams/writable:499:10)\n    at Writable.write (node:internal/streams/writable:508:10)\n    at Socket.socketOnData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1164:35)\n    at Socket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)"
+      }
+    },
+    "messageId": 2
+  }
+05:15:41.753 detox[90255] [90mi[39m /sdcard/51532895_1.log: 1 file pulled, 0 skipped. 5.6 MB/s (4096 bytes in 0.001s)
+
+05:15:41.753 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "rm  \"/sdcard/51532895_1.log\""
+05:15:41.755 detox[90255] [90mi[39m get message
+  data: {"type":"serverError","params":{"error":{"name":"DetoxRuntimeError","message":"Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 2\n}","stack":"DetoxRuntimeError: Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 2\n}\n    at Object.maybeAppWasNotLaunched (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/errors/longreads/failedToReachTheApp.js:22:10)\n    at TesterConnectionHandler.handle (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/handlers/TesterConnectionHandler.js:32:31)\n    at DetoxConnection._onMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/DetoxConnection.js:76:23)\n    at WebSocket.emit (node:events:519:28)\n    at Receiver.receiverOnMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1070:20)\n    at Receiver.emit (node:events:519:28)\n    at Receiver.dataMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:517:14)\n    at Receiver.getData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:435:17)\n    at Receiver.startLoop (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:143:22)\n    at Receiver._write (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:78:10)\n    at writeOrBuffer (node:internal/streams/writable:570:12)\n    at _write (node:internal/streams/writable:499:10)\n    at Writable.write (node:internal/streams/writable:508:10)\n    at Socket.socketOnData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1164:35)\n    at Socket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)"}},"messageId":2}
+   
+05:15:41.756 detox[90255] [90mi[39m Detox can't seem to connect to the test app(s)!
+
+HINT: 
+
+Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+
+---
+The following package could not be delivered:
+
+{
+  type: 'invoke',
+  params: [Object],
+  messageId: 2
+}
+05:15:41.756 detox[90255] [90mE[39m type input text: "Hello Detox"
+  error: Detox can't seem to connect to the test app(s)!
+  
+  HINT: 
+  
+  Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+  Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+  
+  ---
+  The following package could not be delivered:
+  
+  {
+    type: 'invoke',
+    params: [Object],
+    messageId: 2
+  }
+      at Object.typeText (/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js:14:41)
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at /home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at new Promise (<anonymous>)
+      at Object.<anonymous> (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+      at Promise.then.completed (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:298:28)
+      at new Promise (<anonymous>)
+      at callAsyncCircusFn (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:231:10)
+      at _callCircusTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:316:40)
+      at _runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:252:3)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:126:9)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:121:9)
+      at run (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:71:3)
+      at runAndTransformResultsToJestFormat (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+      at jestAdapter (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+      at runTestInternal (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:367:16)
+      at runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:444:34)
+05:15:41.756 detox[90255] [90mB[39m onTestFnFailure
+  args: ({"error":{}})
+05:15:41.757 detox[90255] [90mE[39m onTestFnFailure
+05:15:41.757 detox[90255] [90mE[39m test_fn
+  error: Detox can't seem to connect to the test app(s)!
+  
+  HINT: 
+  
+  Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+  Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+  
+  ---
+  The following package could not be delivered:
+  
+  {
+    type: 'invoke',
+    params: [Object],
+    messageId: 2
+  }
+      at Object.typeText (/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js:14:41)
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at /home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at new Promise (<anonymous>)
+      at Object.<anonymous> (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+      at Promise.then.completed (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:298:28)
+      at new Promise (<anonymous>)
+      at callAsyncCircusFn (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:231:10)
+      at _callCircusTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:316:40)
+      at _runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:252:3)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:126:9)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:121:9)
+      at run (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:71:3)
+      at runAndTransformResultsToJestFormat (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+      at jestAdapter (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+      at runTestInternal (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:367:16)
+      at runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:444:34)
+05:15:41.757 detox[90255] [90mB[39m onTestDone
+  args: ({"title":"should type text in input field","fullName":"App Detox Tests should type text in input field","status":"failed","invocations":1,"timedOut":false})
+05:15:41.757 detox[90255] [90mi[39m stopping ADBLogcatRecording
+05:15:41.773 detox[90255] [90mi[39m 
+05:15:41.773 detox[90255] [90mi[39m saving ADBLogcatRecording to: artifacts/android.emu.debug.2025-01-26 20-15-32Z/emulator-5556 2025-01-26 20-15-41Z.startup.log
+05:15:41.773 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 pull "/sdcard/51532895_0.log" "artifacts/android.emu.debug.2025-01-26 20-15-32Z/emulator-5556 2025-01-26 20-15-41Z.startup.log"
+05:15:41.777 detox[90255] [90mi[39m /sdcard/51532895_0.log: 1 file pulled, 0 skipped. 62.0 MB/s (32768 bytes in 0.001s)
+
+05:15:41.777 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "rm  \"/sdcard/51532895_0.log\""
+05:15:41.795 detox[90255] [90mi[39m 
+05:15:42.045 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell du /sdcard/51532895_2.log
+05:15:42.056 detox[90255] [90mi[39m 4	/sdcard/51532895_2.log
+
+05:15:42.056 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "date +\"%m-%d %T.000\""
+05:15:42.070 detox[90255] [90mi[39m 01-27 05:15:41.000
+
+05:15:42.072 detox[90255] [90mi[39m sending SIGINT to: /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell logcat -T "01-27 05:15:41.000" --pid=7928 -f /sdcard/51532895_2.log
+05:15:42.072 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:41.000\" --pid=7928 -f /sdcard/51532895_2.log" terminated with SIGINT
+05:15:42.072 detox[90255] [90mE[39m onTestDone
+05:15:42.072 detox[90255] [90mE[39m should type text in input field
+05:15:42.072 detox[90255] [90mi[39m App Detox Tests: should type text in input field [FAIL]
+05:15:42.073 detox[90255] [90mB[39m should clear text when reset button is pressed
+05:15:42.073 detox[90255] [90mi[39m App Detox Tests: should clear text when reset button is pressed
+05:15:42.074 detox[90255] [90mB[39m onTestStart
+  args: ({"title":"should clear text when reset button is pressed","fullName":"App Detox Tests should clear text when reset button is pressed","status":"running","invocations":1})
+05:15:42.074 detox[90255] [90mi[39m starting ADBLogcatRecording
+05:15:42.076 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:41.000\" --pid=7928 -f /sdcard/51532895_3.log"
+05:15:42.076 detox[90255] [90mE[39m onTestStart
+05:15:42.076 detox[90255] [90mB[39m beforeEach
+05:15:42.076 detox[90255] [90mE[39m beforeEach
+05:15:42.076 detox[90255] [90mB[39m beforeEach
+05:15:42.076 detox[90255] [90mE[39m beforeEach
+05:15:42.076 detox[90255] [90mB[39m test_fn
+05:15:42.077 detox[90255] [90mi[39m send message
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["input-field",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"typeText","args":["Hello Detox"]}}]},"messageId":3}
+05:15:42.078 detox[90242] [90mi[39m get
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["input-field",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"typeText","args":["Hello Detox"]}}]},"messageId":3}
+05:15:42.078 detox[90242] [90mi[39m send
+  data: {
+    "type": "serverError",
+    "params": {
+      "error": {
+        "name": "DetoxRuntimeError",
+        "message": "Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 3\n}",
+        "stack": "DetoxRuntimeError: Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 3\n}\n    at Object.maybeAppWasNotLaunched (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/errors/longreads/failedToReachTheApp.js:22:10)\n    at TesterConnectionHandler.handle (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/handlers/TesterConnectionHandler.js:32:31)\n    at DetoxConnection._onMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/DetoxConnection.js:76:23)\n    at WebSocket.emit (node:events:519:28)\n    at Receiver.receiverOnMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1070:20)\n    at Receiver.emit (node:events:519:28)\n    at Receiver.dataMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:517:14)\n    at Receiver.getData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:435:17)\n    at Receiver.startLoop (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:143:22)\n    at Receiver._write (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:78:10)\n    at writeOrBuffer (node:internal/streams/writable:570:12)\n    at _write (node:internal/streams/writable:499:10)\n    at Writable.write (node:internal/streams/writable:508:10)\n    at Socket.socketOnData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1164:35)\n    at Socket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)"
+      }
+    },
+    "messageId": 3
+  }
+05:15:42.078 detox[90255] [90mB[39m type input text: "Hello Detox"
+  data: {
+    "target": {
+      "type": "Class",
+      "value": "com.wix.detox.espresso.EspressoDetox"
+    },
+    "method": "perform",
+    "args": [
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxMatcher"
+          },
+          "method": "matcherForTestId",
+          "args": [
+            "input-field",
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        }
+      },
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxViewActions"
+          },
+          "method": "typeText",
+          "args": [
+            "Hello Detox"
+          ]
+        }
+      }
+    ]
+  }
+05:15:42.078 detox[90255] [90mi[39m saving ADBLogcatRecording to: artifacts/android.emu.debug.2025-01-26 20-15-32Z/✗ App Detox Tests should type text in input field/device.log
+05:15:42.078 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 pull "/sdcard/51532895_2.log" "artifacts/android.emu.debug.2025-01-26 20-15-32Z/✗ App Detox Tests should type text in input field/device.log"
+05:15:42.080 detox[90255] [90mi[39m get message
+  data: {"type":"serverError","params":{"error":{"name":"DetoxRuntimeError","message":"Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 3\n}","stack":"DetoxRuntimeError: Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 3\n}\n    at Object.maybeAppWasNotLaunched (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/errors/longreads/failedToReachTheApp.js:22:10)\n    at TesterConnectionHandler.handle (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/handlers/TesterConnectionHandler.js:32:31)\n    at DetoxConnection._onMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/DetoxConnection.js:76:23)\n    at WebSocket.emit (node:events:519:28)\n    at Receiver.receiverOnMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1070:20)\n    at Receiver.emit (node:events:519:28)\n    at Receiver.dataMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:517:14)\n    at Receiver.getData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:435:17)\n    at Receiver.startLoop (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:143:22)\n    at Receiver._write (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:78:10)\n    at writeOrBuffer (node:internal/streams/writable:570:12)\n    at _write (node:internal/streams/writable:499:10)\n    at Writable.write (node:internal/streams/writable:508:10)\n    at Socket.socketOnData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1164:35)\n    at Socket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)"}},"messageId":3}
+   
+05:15:42.081 detox[90255] [90mi[39m Detox can't seem to connect to the test app(s)!
+
+HINT: 
+
+Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+
+---
+The following package could not be delivered:
+
+{
+  type: 'invoke',
+  params: [Object],
+  messageId: 3
+}
+05:15:42.081 detox[90255] [90mE[39m type input text: "Hello Detox"
+  error: Detox can't seem to connect to the test app(s)!
+  
+  HINT: 
+  
+  Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+  Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+  
+  ---
+  The following package could not be delivered:
+  
+  {
+    type: 'invoke',
+    params: [Object],
+    messageId: 3
+  }
+      at Object.typeText (/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js:19:41)
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at /home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at new Promise (<anonymous>)
+      at Object.<anonymous> (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+      at Promise.then.completed (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:298:28)
+      at new Promise (<anonymous>)
+      at callAsyncCircusFn (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:231:10)
+      at _callCircusTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:316:40)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at _runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:252:3)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:126:9)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:121:9)
+      at run (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:71:3)
+      at runAndTransformResultsToJestFormat (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+      at jestAdapter (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+      at runTestInternal (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:367:16)
+      at runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:444:34)
+05:15:42.081 detox[90255] [90mB[39m onTestFnFailure
+  args: ({"error":{}})
+05:15:42.081 detox[90255] [90mE[39m onTestFnFailure
+05:15:42.081 detox[90255] [90mE[39m test_fn
+  error: Detox can't seem to connect to the test app(s)!
+  
+  HINT: 
+  
+  Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+  Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+  
+  ---
+  The following package could not be delivered:
+  
+  {
+    type: 'invoke',
+    params: [Object],
+    messageId: 3
+  }
+      at Object.typeText (/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js:19:41)
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at /home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at new Promise (<anonymous>)
+      at Object.<anonymous> (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+      at Promise.then.completed (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:298:28)
+      at new Promise (<anonymous>)
+      at callAsyncCircusFn (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:231:10)
+      at _callCircusTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:316:40)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at _runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:252:3)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:126:9)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:121:9)
+      at run (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:71:3)
+      at runAndTransformResultsToJestFormat (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+      at jestAdapter (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+      at runTestInternal (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:367:16)
+      at runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:444:34)
+05:15:42.082 detox[90255] [90mB[39m onTestDone
+  args: ({"title":"should clear text when reset button is pressed","fullName":"App Detox Tests should clear text when reset button is pressed","status":"failed","invocations":1,"timedOut":false})
+05:15:42.082 detox[90255] [90mi[39m stopping ADBLogcatRecording
+05:15:42.083 detox[90255] [90mi[39m /sdcard/51532895_2.log: 1 file pulled, 0 skipped. 9.4 MB/s (4096 bytes in 0.000s)
+
+05:15:42.083 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "rm  \"/sdcard/51532895_2.log\""
+05:15:42.102 detox[90255] [90mi[39m 
+05:15:42.376 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell du /sdcard/51532895_3.log
+05:15:42.392 detox[90255] [90mi[39m 4	/sdcard/51532895_3.log
+
+05:15:42.392 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "date +\"%m-%d %T.000\""
+05:15:42.408 detox[90255] [90mi[39m 01-27 05:15:42.000
+
+05:15:42.409 detox[90255] [90mi[39m sending SIGINT to: /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell logcat -T "01-27 05:15:41.000" --pid=7928 -f /sdcard/51532895_3.log
+05:15:42.410 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:41.000\" --pid=7928 -f /sdcard/51532895_3.log" terminated with SIGINT
+05:15:42.410 detox[90255] [90mE[39m onTestDone
+05:15:42.410 detox[90255] [90mE[39m should clear text when reset button is pressed
+05:15:42.410 detox[90255] [90mi[39m App Detox Tests: should clear text when reset button is pressed [FAIL]
+05:15:42.411 detox[90255] [90mB[39m should show alert when submit button is pressed
+05:15:42.411 detox[90255] [90mi[39m App Detox Tests: should show alert when submit button is pressed
+05:15:42.411 detox[90255] [90mB[39m onTestStart
+  args: ({"title":"should show alert when submit button is pressed","fullName":"App Detox Tests should show alert when submit button is pressed","status":"running","invocations":1})
+05:15:42.411 detox[90255] [90mi[39m starting ADBLogcatRecording
+05:15:42.413 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:42.000\" --pid=7928 -f /sdcard/51532895_4.log"
+05:15:42.413 detox[90255] [90mE[39m onTestStart
+05:15:42.413 detox[90255] [90mB[39m beforeEach
+05:15:42.413 detox[90255] [90mE[39m beforeEach
+05:15:42.413 detox[90255] [90mB[39m beforeEach
+05:15:42.413 detox[90255] [90mE[39m beforeEach
+05:15:42.414 detox[90255] [90mB[39m test_fn
+05:15:42.414 detox[90255] [90mi[39m send message
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["input-field",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"typeText","args":["Test Alert"]}}]},"messageId":4}
+05:15:42.414 detox[90255] [90mB[39m type input text: "Test Alert"
+  data: {
+    "target": {
+      "type": "Class",
+      "value": "com.wix.detox.espresso.EspressoDetox"
+    },
+    "method": "perform",
+    "args": [
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxMatcher"
+          },
+          "method": "matcherForTestId",
+          "args": [
+            "input-field",
+            {
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        }
+      },
+      {
+        "type": "Invocation",
+        "value": {
+          "target": {
+            "type": "Class",
+            "value": "com.wix.detox.espresso.DetoxViewActions"
+          },
+          "method": "typeText",
+          "args": [
+            "Test Alert"
+          ]
+        }
+      }
+    ]
+  }
+05:15:42.415 detox[90242] [90mi[39m get
+  data: {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["input-field",{"type":"boolean","value":false}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"typeText","args":["Test Alert"]}}]},"messageId":4}
+05:15:42.415 detox[90242] [90mi[39m send
+  data: {
+    "type": "serverError",
+    "params": {
+      "error": {
+        "name": "DetoxRuntimeError",
+        "message": "Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 4\n}",
+        "stack": "DetoxRuntimeError: Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 4\n}\n    at Object.maybeAppWasNotLaunched (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/errors/longreads/failedToReachTheApp.js:22:10)\n    at TesterConnectionHandler.handle (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/handlers/TesterConnectionHandler.js:32:31)\n    at DetoxConnection._onMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/DetoxConnection.js:76:23)\n    at WebSocket.emit (node:events:519:28)\n    at Receiver.receiverOnMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1070:20)\n    at Receiver.emit (node:events:519:28)\n    at Receiver.dataMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:517:14)\n    at Receiver.getData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:435:17)\n    at Receiver.startLoop (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:143:22)\n    at Receiver._write (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:78:10)\n    at writeOrBuffer (node:internal/streams/writable:570:12)\n    at _write (node:internal/streams/writable:499:10)\n    at Writable.write (node:internal/streams/writable:508:10)\n    at Socket.socketOnData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1164:35)\n    at Socket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)"
+      }
+    },
+    "messageId": 4
+  }
+05:15:42.415 detox[90255] [90mi[39m saving ADBLogcatRecording to: artifacts/android.emu.debug.2025-01-26 20-15-32Z/✗ App Detox Tests should clear text when reset button is pressed/device.log
+05:15:42.415 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 pull "/sdcard/51532895_3.log" "artifacts/android.emu.debug.2025-01-26 20-15-32Z/✗ App Detox Tests should clear text when reset button is pressed/device.log"
+05:15:42.417 detox[90255] [90mi[39m get message
+  data: {"type":"serverError","params":{"error":{"name":"DetoxRuntimeError","message":"Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 4\n}","stack":"DetoxRuntimeError: Detox can't seem to connect to the test app(s)!\n\nHINT: \n\nHave you forgotten to call 'device.launchApp()' in the beginning of your test?\nRefer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs\n\n---\nThe following package could not be delivered:\n\n{\n  type: 'invoke',\n  params: [Object],\n  messageId: 4\n}\n    at Object.maybeAppWasNotLaunched (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/errors/longreads/failedToReachTheApp.js:22:10)\n    at TesterConnectionHandler.handle (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/handlers/TesterConnectionHandler.js:32:31)\n    at DetoxConnection._onMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/detox/src/server/DetoxConnection.js:76:23)\n    at WebSocket.emit (node:events:519:28)\n    at Receiver.receiverOnMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1070:20)\n    at Receiver.emit (node:events:519:28)\n    at Receiver.dataMessage (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:517:14)\n    at Receiver.getData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:435:17)\n    at Receiver.startLoop (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:143:22)\n    at Receiver._write (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/receiver.js:78:10)\n    at writeOrBuffer (node:internal/streams/writable:570:12)\n    at _write (node:internal/streams/writable:499:10)\n    at Writable.write (node:internal/streams/writable:508:10)\n    at Socket.socketOnData (/home/alvin/Desktop/test/detox_react_native/node_modules/ws/lib/websocket.js:1164:35)\n    at Socket.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)"}},"messageId":4}
+   
+05:15:42.417 detox[90255] [90mi[39m Detox can't seem to connect to the test app(s)!
+
+HINT: 
+
+Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+
+---
+The following package could not be delivered:
+
+{
+  type: 'invoke',
+  params: [Object],
+  messageId: 4
+}
+05:15:42.417 detox[90255] [90mE[39m type input text: "Test Alert"
+  error: Detox can't seem to connect to the test app(s)!
+  
+  HINT: 
+  
+  Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+  Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+  
+  ---
+  The following package could not be delivered:
+  
+  {
+    type: 'invoke',
+    params: [Object],
+    messageId: 4
+  }
+      at Object.typeText (/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js:25:41)
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at /home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at new Promise (<anonymous>)
+      at Object.<anonymous> (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+      at Promise.then.completed (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:298:28)
+      at new Promise (<anonymous>)
+      at callAsyncCircusFn (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:231:10)
+      at _callCircusTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:316:40)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at _runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:252:3)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:126:9)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:121:9)
+      at run (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:71:3)
+      at runAndTransformResultsToJestFormat (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+      at jestAdapter (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+      at runTestInternal (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:367:16)
+      at runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:444:34)
+05:15:42.418 detox[90255] [90mB[39m onTestFnFailure
+  args: ({"error":{}})
+05:15:42.418 detox[90255] [90mE[39m onTestFnFailure
+05:15:42.418 detox[90255] [90mE[39m test_fn
+  error: Detox can't seem to connect to the test app(s)!
+  
+  HINT: 
+  
+  Have you forgotten to call 'device.launchApp()' in the beginning of your test?
+  Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs
+  
+  ---
+  The following package could not be delivered:
+  
+  {
+    type: 'invoke',
+    params: [Object],
+    messageId: 4
+  }
+      at Object.typeText (/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js:25:41)
+      at Generator.next (<anonymous>)
+      at asyncGeneratorStep (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:17)
+      at _next (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:17:9)
+      at /home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:22:7
+      at new Promise (<anonymous>)
+      at Object.<anonymous> (/home/alvin/Desktop/test/detox_react_native/node_modules/@babel/runtime/helpers/asyncToGenerator.js:14:12)
+      at Promise.then.completed (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:298:28)
+      at new Promise (<anonymous>)
+      at callAsyncCircusFn (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/utils.js:231:10)
+      at _callCircusTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:316:40)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at _runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:252:3)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:126:9)
+      at _runTestsForDescribeBlock (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:121:9)
+      at run (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/run.js:71:3)
+      at runAndTransformResultsToJestFormat (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:122:21)
+      at jestAdapter (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+      at runTestInternal (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:367:16)
+      at runTest (/home/alvin/Desktop/test/detox_react_native/node_modules/jest-runner/build/runTest.js:444:34)
+05:15:42.418 detox[90255] [90mB[39m onTestDone
+  args: ({"title":"should show alert when submit button is pressed","fullName":"App Detox Tests should show alert when submit button is pressed","status":"failed","invocations":1,"timedOut":false})
+05:15:42.418 detox[90255] [90mi[39m stopping ADBLogcatRecording
+05:15:42.419 detox[90255] [90mi[39m /sdcard/51532895_3.log: 1 file pulled, 0 skipped. 9.2 MB/s (4096 bytes in 0.000s)
+
+05:15:42.420 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "rm  \"/sdcard/51532895_3.log\""
+05:15:42.435 detox[90255] [90mi[39m 
+05:15:42.713 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell du /sdcard/51532895_4.log
+05:15:42.725 detox[90255] [90mi[39m 4	/sdcard/51532895_4.log
+
+05:15:42.725 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "date +\"%m-%d %T.000\""
+05:15:42.737 detox[90255] [90mi[39m 01-27 05:15:42.000
+
+05:15:42.738 detox[90255] [90mi[39m sending SIGINT to: /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell logcat -T "01-27 05:15:42.000" --pid=7928 -f /sdcard/51532895_4.log
+05:15:42.738 detox[90255] [90mi[39m /home/alvin/Android/Sdk/platform-tools/adb -s emulator-5556 shell "logcat -T \"01-27 05:15:42.000\" --pid=7928 -f /sdcard/51532895_4.log" terminated with SIGINT
+05:15:42.739 detox[90255] [90mE[39m onTestDone
+05:15:42.739 detox[90255] [90mE[39m should show alert when submit button is pressed
+05:15:42.739 detox[90255] [90mi[39m App Detox Tests: should show alert when submit button is pressed [FAIL]
+05:15:42.739 detox[90255] [90mB[39m onRunDescribeFinish
+  args: ({"name":"App Detox Tests"})
+05:15:42.740 detox[90255] [90mE[39m onRunDescribeFinish
+05:15:42.740 detox[90255] [90mE[39m App Detox Tests
+05:15:42.740 detox[90255] [90mB[39m onRunDescribeFinish
+  args: ({"name":"ROOT_DESCRIBE_BLOCK"})
+05:15:42.740 detox[90255] [90mE[39m onRunDescribeFinish
+05:15:42.740 detox[90255] [90mE[39m run the tests
+05:15:42.764 detox[90255] [90mB[39m tear down environment
+05:15:42.764 detox[90255] [90mB[39m onBeforeCleanup
+  args: ()
+05:15:42.765 detox[90255] [90mi[39m saving ADBLogcatRecording to: artifacts/android.emu.debug.2025-01-26 20-15-32Z/✗ App Detox Tests should show alert when submit button is pressed/device.log
+05:15:42.765 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 pull "/sdcard/51532895_4.log" "artifacts/android.emu.debug.2025-01-26 20-15-32Z/✗ App Detox Tests should show alert when submit button is pressed/device.log"
+05:15:42.770 detox[90255] [90mi[39m /sdcard/51532895_4.log: 1 file pulled, 0 skipped.
+
+05:15:42.770 detox[90255] [90mi[39m "/home/alvin/Android/Sdk/platform-tools/adb" -s emulator-5556 shell "rm  \"/sdcard/51532895_4.log\""
+05:15:42.785 detox[90255] [90mi[39m 
+05:15:42.785 detox[90255] [90mi[39m saving FileArtifact to: artifacts/android.emu.debug.2025-01-26 20-15-32Z/detox_pid_90255.json.log { append: true }
+05:15:42.785 detox[90255] [90mi[39m saving FileArtifact to: artifacts/android.emu.debug.2025-01-26 20-15-32Z/detox_pid_90255.log { append: true }
+05:15:42.785 detox[90255] [90mE[39m onBeforeCleanup
+05:15:42.787 detox[90242] [90mi[39m tester exited session a08f28b4-bd58-468d-65a0-2cac02acc698
+05:15:42.787 detox[90242] [90mE[39m connection :44717<->:35620
+05:15:42.787 detox[90255] [90mi[39m dispatching event to  primary-90242 /tmp/detox.primary-90242  :  deallocateDevice , {
+  deviceCookie: {
+    id: 'emulator-5556',
+    adbName: 'emulator-5556',
+    name: 'emulator-5556 (Pixel_9_API35)'
+  }
+}
+05:15:42.788 detox[90242] [90mi[39m received event of :  deallocateDevice {
+  deviceCookie: {
+    id: 'emulator-5556',
+    adbName: 'emulator-5556',
+    name: 'emulator-5556 (Pixel_9_API35)'
+  }
+}
+05:15:42.788 detox[90242] [90mB[39m free: emulator-5556
+  data: {}
+05:15:42.789 detox[90242] [90mE[39m free: emulator-5556
+05:15:42.789 detox[90242] [90mi[39m dispatching event to socket  :  deallocateDeviceDone {}
+05:15:42.789 detox[90255] [90mi[39m ## received events ##
+05:15:42.789 detox[90255] [90mi[39m detected event deallocateDeviceDone {}
+05:15:42.789 detox[90255] [90mE[39m tear down environment
+05:15:42.789 detox[90255] [90mE[39m e2e/starter.test.js
+05:15:42.794 detox[90242] [90mi[39m received event of :  reportTestResults {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+05:15:42.794 detox[90242] [90mi[39m dispatching event to socket  :  reportTestResultsDone {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+05:15:42.794 detox[90255] [90mi[39m dispatching event to  primary-90242 /tmp/detox.primary-90242  :  reportTestResults , {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js',
+      testExecError: undefined,
+      isPermanentFailure: false
+    }
+  ]
+}
+05:15:42.795 detox[90242] [90mi[39m broadcasting event to all known sockets listening to  /tmp/detox.primary-90242  :   sessionStateUpdate {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+05:15:42.795 detox[90255] [90mi[39m ## received events ##
+05:15:42.795 detox[90255] [90mi[39m detected event reportTestResultsDone {
+  testResults: [
+    {
+      success: false,
+      testFilePath: '/home/alvin/Desktop/test/detox_react_native/e2e/starter.test.js',
+      isPermanentFailure: false
+    }
+  ]
+}
+05:15:42.796 detox[90255] [90mi[39m connection closed primary-90242 /tmp/detox.primary-90242 0 tries remaining of 0
+05:15:42.796 detox[90255] [90mi[39m secondary-90255 exceeded connection rety amount of  or stopRetrying flag set.
+05:15:42.797 detox[90242] [90mi[39m server socket error Error: read ECONNRESET
+    at Pipe.onStreamRead (node:internal/stream_base_commons:218:20) {
+  errno: -104,
+  code: 'ECONNRESET',
+  syscall: 'read'
+}
+05:15:42.798 detox[90242] [90mi[39m socket disconnected secondary-90255
+05:15:42.906 detox[90242] [90mE[39m Command failed with exit code = 1:
+jest --config e2e/jest.config.js
+05:15:42.907 detox[90242] [90mB[39m cleanup
+  args: ()
+05:15:42.907 detox[90242] [90mE[39m cleanup
+05:15:42.908 detox[90242] [90mi[39m Detox server has been closed gracefully
+05:15:42.909 detox[90242] [90mE[39m node_modules/.bin/detox test --configuration android.emu.debug --record-logs all

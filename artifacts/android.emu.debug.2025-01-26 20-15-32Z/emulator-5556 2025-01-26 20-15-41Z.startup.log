@@ -1,0 +1,218 @@
+--------- beginning of main
+01-27 05:15:36.361  7928  7928 I ox_react_native: Late-enabling -Xcheck:jni
+01-27 05:15:36.378  7928  7928 I ox_react_native: Using CollectorTypeCMC GC.
+01-27 05:15:36.379  7928  7928 W ox_react_native: Unexpected CPU variant for x86: x86_64.
+01-27 05:15:36.379  7928  7928 W ox_react_native: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+01-27 05:15:36.406  7928  7928 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+--------- beginning of system
+01-27 05:15:36.418  7928  7928 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.detox_react_native]: x86_64, null instrumentation[com.detox_react_native.test]: null, null
+01-27 05:15:36.420  7928  7928 W ox_react_native: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+01-27 05:15:36.421  7928  7928 W ox_react_native: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*2496447986])
+01-27 05:15:36.422  7928  7928 W ox_react_native: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*2496447986:/system/framework/android.test.mock.jar*1452759902])
+01-27 05:15:36.422  7928  7928 W ziparchive: Unable to open '/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.dm': No such file or directory
+01-27 05:15:36.422  7928  7928 W ziparchive: Unable to open '/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.dm': No such file or directory
+01-27 05:15:36.489  7928  7928 W ziparchive: Unable to open '/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.dm': No such file or directory
+01-27 05:15:36.489  7928  7928 W ziparchive: Unable to open '/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.dm': No such file or directory
+01-27 05:15:36.566  7928  7928 D nativeloader: Configuring clns-7 for other apk /system/framework/android.test.runner.jar:/system/framework/android.test.mock.jar:/system/framework/android.test.base.jar:/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk:/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk. target_sdk_version=33, uses_libraries=, library_path=/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/lib/x86_64:/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/lib/x86_64:/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk!/lib/x86_64:/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.detox_react_native
+01-27 05:15:36.572  7928  7928 V GraphicsEnvironment: Currently set values for:
+01-27 05:15:36.572  7928  7928 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+01-27 05:15:36.572  7928  7928 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+01-27 05:15:36.572  7928  7928 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+01-27 05:15:36.573  7928  7928 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+01-27 05:15:36.574  7928  7928 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+01-27 05:15:36.575  7928  7928 D nativeloader: Configuring clns-8 for other apk /system/framework/android.test.mock.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/lib/x86_64:/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/lib/x86_64, permitted_path=/data:/mnt/expand
+01-27 05:15:36.575  7928  7928 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+01-27 05:15:36.576  7928  7928 D nativeloader: Configuring clns-9 for other apk /system/framework/android.test.runner.jar. target_sdk_version=33, uses_libraries=ALL, library_path=/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/lib/x86_64:/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/lib/x86_64, permitted_path=/data:/mnt/expand
+01-27 05:15:36.578  7928  7928 W ox_react_native: ClassLoaderContext shared library size mismatch. Expected=2, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]#PCL[/system/framework/android.test.runner.jar*2496447986]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]}};PCL[/system/framework/android.test.runner.jar*2496447986:/system/framework/android.test.mock.jar*1452759902:/system/framework/android.test.base.jar*724373495:/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk*2197572181:/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk*4235302854])
+01-27 05:15:36.579  7928  7928 W ox_react_native: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[] | PCL[/system/framework/android.test.runner.jar*2496447986]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]#PCL[/system/framework/android.test.runner.jar*2496447986]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]}};PCL[/system/framework/android.test.runner.jar*2496447986:/system/framework/android.test.mock.jar*1452759902:/system/framework/android.test.base.jar*724373495:/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk*2197572181:/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk*4235302854])
+01-27 05:15:36.579  7928  7928 W ox_react_native: ClassLoaderContext classpath size mismatch. expected=0, found=2 (PCL[] | PCL[/system/framework/android.test.runner.jar*2496447986:/system/framework/android.test.mock.jar*1452759902]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]#PCL[/system/framework/android.test.runner.jar*2496447986]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]}};PCL[/system/framework/android.test.runner.jar*2496447986:/system/framework/android.test.mock.jar*1452759902:/system/framework/android.test.base.jar*724373495:/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk*2197572181:/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk*4235302854])
+01-27 05:15:36.580  7928  7928 W ziparchive: Unable to open '/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.dm': No such file or directory
+01-27 05:15:36.580  7928  7928 W ziparchive: Unable to open '/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.dm': No such file or directory
+01-27 05:15:36.636  7928  7928 W ziparchive: Unable to open '/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.dm': No such file or directory
+01-27 05:15:36.636  7928  7928 W ziparchive: Unable to open '/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.dm': No such file or directory
+01-27 05:15:36.703  7928  7928 I AndroidJUnitRunner: newApplication com.detox_react_native.MainApplication
+01-27 05:15:36.708  7928  7928 I AndroidJUnitRunner: onCreate Bundle[mParcelledData.dataSize=288]
+01-27 05:15:36.709  7928  7928 D AndroidJUnitRunner: Use the raw file system for managing file I/O.
+01-27 05:15:36.731  7928  7928 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+01-27 05:15:36.731  7928  7950 D AndroidJUnitRunner: onStart is called.
+01-27 05:15:36.732  7928  7928 V SoLoader: Init System Loader delegate
+01-27 05:15:36.736  7928  7928 W unknown:ReactInstanceManagerBuilder: You're not setting the JS Engine Resolution Algorithm. We'll try to load JSC first, and if it fails we'll fallback to Hermes
+01-27 05:15:36.737  7928  7928 D nativeloader: Load libjscexecutor.so using ns clns-7 from class loader (caller=/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk): dlopen failed: library "libjscexecutor.so" not found
+01-27 05:15:36.740  7928  7928 D nativeloader: Load /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64/libhermes.so using ns clns-7 from class loader (caller=/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk): ok
+01-27 05:15:36.747  7928  7928 D nativeloader: Load /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64/libhermes_executor.so using ns clns-7 from class loader (caller=/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk): ok
+01-27 05:15:36.782  7928  7956 D nativeloader: Load /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64/libfbjni.so using ns clns-7 from class loader (caller=/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk): ok
+01-27 05:15:36.785  7928  7956 D nativeloader: Load /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64/libflipper.so using ns clns-7 from class loader (caller=/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk): ok
+01-27 05:15:36.793  7928  7961 W unknown:InspectorPackagerConnection: Couldn't connect to packager, will silently retry
+01-27 05:15:36.794  7928  7962 W unknown:ReconnectingWebSocket: Couldn't connect to "ws://localhost:8081/message?device=Android%20SDK%20built%20for%20x86_64%20-%2015%20-%20API%2035&app=com.detox_react_native&clientid=BridgeDevSupportManager", will silently retry
+01-27 05:15:36.795  7928  7928 W ox_react_native: Accessing hidden field Landroid/view/View;->mKeyedTags:Landroid/util/SparseArray; (unsupported, reflection, allowed)
+01-27 05:15:36.795  7928  7928 W ox_react_native: Accessing hidden field Landroid/view/View;->mListenerInfo:Landroid/view/View$ListenerInfo; (unsupported, reflection, allowed)
+01-27 05:15:36.795  7928  7928 W ox_react_native: Accessing hidden field Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener; (unsupported, reflection, allowed)
+01-27 05:15:36.796  7928  7928 I flipper : flipper: FlipperClient::addPlugin Inspector
+01-27 05:15:36.797  7928  7928 I flipper : flipper: FlipperClient::addPlugin Databases
+01-27 05:15:36.797  7928  7928 I flipper : flipper: FlipperClient::addPlugin Preferences
+01-27 05:15:36.797  7928  7928 I flipper : flipper: FlipperClient::addPlugin CrashReporter
+01-27 05:15:36.798  7928  7928 I flipper : flipper: FlipperClient::addPlugin Network
+01-27 05:15:36.803  7928  7950 D TestRequestBuilder: Using class path scanning to discover tests
+01-27 05:15:36.803  7928  7950 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~crUw5pnt_5Q_D7g_-oZX9A==/com.detox_react_native.test-gM8JGEVeVBJMFU5rW9FEeA==/base.apk]
+01-27 05:15:36.803  7928  7956 W System.err: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+01-27 05:15:36.803  7928  7956 W System.err: SLF4J: Defaulting to no-operation (NOP) logger implementation
+01-27 05:15:36.803  7928  7956 W System.err: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+01-27 05:15:36.804  7928  7950 W ox_react_native: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+01-27 05:15:36.805  7928  7966 D TrafficStats: tagSocket(99) with statsTag=0xffffffff, statsUid=-1
+01-27 05:15:37.266  7928  7950 I TestRunner: run started: 1 tests
+01-27 05:15:37.267  7928  7950 I TestRunner: started: runDetoxTests(com.detox_react_native.DetoxTest)
+01-27 05:15:37.269  7928  7950 I Detox   : Detox server connection details: url=ws://localhost:44717, sessionId=a08f28b4-bd58-468d-65a0-2cac02acc698
+01-27 05:15:37.271  7928  7950 W FileTestStorage: Output properties is not supported.
+01-27 05:15:37.272  7928  7950 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+01-27 05:15:37.275  7928  7950 D EventInjectionStrategy: Creating injection strategy with input manager.
+01-27 05:15:37.275  7928  7950 W ox_react_native: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+01-27 05:15:37.275  7928  7950 W ox_react_native: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+01-27 05:15:37.275  7928  7950 W ox_react_native: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+01-27 05:15:37.278  7928  7950 W ox_react_native: Accessing hidden field Ljava/lang/reflect/Field;->accessFlags:I (unsupported, reflection, allowed)
+01-27 05:15:37.278  7928  7950 I Detox   : Connecting to server...
+01-27 05:15:37.278  7928  7950 I DetoxWSClient: At connectToServer
+01-27 05:15:38.797  7928  7962 D TrafficStats: tagSocket(110) with statsTag=0xffffffff, statsUid=-1
+01-27 05:15:38.797  7928  7961 D TrafficStats: tagSocket(109) with statsTag=0xffffffff, statsUid=-1
+01-27 05:15:38.809  7928  7981 D TrafficStats: tagSocket(111) with statsTag=0xffffffff, statsUid=-1
+01-27 05:15:39.803  7928  7961 D nativeloader: Load /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64/libreactnativejni.so using ns clns-7 from class loader (caller=/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk): ok
+01-27 05:15:40.280  7928  7974 D DetoxWSClient: Retrying...
+01-27 05:15:40.280  7928  7974 I DetoxWSClient: At connectToServer
+01-27 05:15:40.281  7928  7982 D TrafficStats: tagSocket(111) with statsTag=0xffffffff, statsUid=-1
+01-27 05:15:40.283  7928  7982 D DetoxWSClient: At onOpen
+01-27 05:15:40.283  7928  7982 I DetoxWSClient: Sending out action 'login' (ID #0)
+01-27 05:15:40.283  7928  7982 I Detox   : Connected to server!
+01-27 05:15:40.284  7928  7982 D DetoxWSClient: Received action 'loginSuccess' (ID #0, params={"testerConnected":true,"appConnected":true})
+01-27 05:15:40.285  7928  7970 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+01-27 05:15:40.285  7928  7970 I DetoxDispatcher: Done with action 'loginSuccess'
+01-27 05:15:40.285  7928  7950 I Detox   : Launching the tested activity!
+01-27 05:15:40.441  7928  7928 D LifecycleMonitor: Lifecycle status change: com.detox_react_native.MainActivity@e9985b0 in: PRE_ON_CREATE
+01-27 05:15:40.503  7928  7988 D TrafficStats: tagSocket(118) with statsTag=0xffffffff, statsUid=-1
+01-27 05:15:40.513  7928  7928 W ox_react_native: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+01-27 05:15:40.513  7928  7928 W ox_react_native: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+01-27 05:15:40.515  7928  7928 D LifecycleMonitor: Lifecycle status change: com.detox_react_native.MainActivity@e9985b0 in: CREATED
+01-27 05:15:40.516  7928  7928 D LifecycleMonitor: Lifecycle status change: com.detox_react_native.MainActivity@e9985b0 in: STARTED
+01-27 05:15:40.517  7928  7928 D LifecycleMonitor: Lifecycle status change: com.detox_react_native.MainActivity@e9985b0 in: RESUMED
+01-27 05:15:40.522  7928  7928 W HWUI    : Unknown dataspace 0
+01-27 05:15:40.524  7928  7982 D DetoxWSClient: Received action 'isReady' (ID #-1000, params={})
+01-27 05:15:40.524  7928  7970 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+01-27 05:15:40.528  7928  7928 D Detox.RNMarker: DOWNLOAD_START (null)
+01-27 05:15:40.530  7928  7928 W unknown:ReactNative: Packager connection already open, nooping.
+01-27 05:15:40.539  7928  7984 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+01-27 05:15:40.539  7928  7984 I EGL_emulation: Opening libGLESv2_emulation.so
+01-27 05:15:40.547  7928  7984 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+01-27 05:15:40.557  7928  7984 I Gralloc4: mapper 4.x is not supported
+01-27 05:15:40.708  7928  7928 D CompatChangeReporter: Compat change id reported: 210923482; UID 10166; state: ENABLED
+01-27 05:15:40.738  7928  7932 I ox_react_native: Compiler allocated 5174KB to compile void android.view.ViewRootImpl.performTraversals()
+01-27 05:15:40.825  7928  7996 D TrafficStats: tagSocket(140) with statsTag=0xffffffff, statsUid=-1
+01-27 05:15:40.843  7928  7932 I ox_react_native: Compiler allocated 4219KB to compile void android.widget.TextView.<init>(android.content.Context, android.util.AttributeSet, int, int)
+01-27 05:15:40.888  7928  7988 D Detox.RNMarker: DOWNLOAD_END ({"url":"http:\/\/localhost:8081\/index.bundle?platform=android&dev=true&minify=false&app=com.detox_react_native&modulesOnly=false&runModule=true","filesChangedCount":0})
+01-27 05:15:40.888  7928  7928 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@71cdbe6
+01-27 05:15:40.890  7928  7928 D Detox.RNMarker: REACT_BRIDGE_LOADING_START (null)
+01-27 05:15:40.891  7928  7997 D Detox.RNMarker: CREATE_REACT_CONTEXT_START (HermesExecutorDebug)
+01-27 05:15:40.891  7928  7997 D Detox.RNMarker: PROCESS_PACKAGES_START (null)
+01-27 05:15:40.893  7928  7997 D Detox.RNMarker: CREATE_MODULE_START (JSCHeapCapture)
+01-27 05:15:40.893  7928  7997 D Detox.RNMarker: CREATE_MODULE_END (JSCHeapCapture)
+01-27 05:15:40.894  7928  7997 D Detox.RNMarker: CREATE_MODULE_START (FrescoModule)
+01-27 05:15:40.895  7928  7997 D Detox.RNMarker: CREATE_MODULE_END (FrescoModule)
+01-27 05:15:40.895  7928  7997 D Detox.RNMarker: PROCESS_PACKAGES_END (null)
+01-27 05:15:40.895  7928  7997 D Detox.RNMarker: CREATE_CATALYST_INSTANCE_START (null)
+01-27 05:15:40.901  7928  7997 D Detox.RNMarker: CREATE_CATALYST_INSTANCE_END (null)
+01-27 05:15:40.901  7928  7998 D Detox.RNMarker: CREATE_REACT_CONTEXT_END (null)
+01-27 05:15:40.901  7928  7997 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+01-27 05:15:40.901  7928  7997 D Detox.RNMarker: PRE_RUN_JS_BUNDLE_START (null)
+01-27 05:15:40.901  7928  7998 D Detox.RNMarker: RUN_JS_BUNDLE_START (/index.bundle?platform=android&dev=true&minify=false&app=com.detox_react_native&modulesOnly=false&runModule=true)
+01-27 05:15:40.902  7928  7928 W unknown:ReactNative: Packager connection already open, nooping.
+01-27 05:15:40.903  7928  7999 D Detox.RNMarker: CREATE_MODULE_START (UIManager)
+01-27 05:15:40.914  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.traceupdateoverlay.TraceUpdateOverlayManager
+01-27 05:15:40.919  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+01-27 05:15:40.922  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+01-27 05:15:40.924  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+01-27 05:15:40.925  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+01-27 05:15:40.925  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+01-27 05:15:40.926  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+01-27 05:15:40.927  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+01-27 05:15:40.928  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+01-27 05:15:40.930  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+01-27 05:15:40.930  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+01-27 05:15:40.931  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+01-27 05:15:40.931  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+01-27 05:15:40.932  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+01-27 05:15:40.933  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+01-27 05:15:40.934  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+01-27 05:15:40.934  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+01-27 05:15:40.934  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+01-27 05:15:40.935  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+01-27 05:15:40.937  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+01-27 05:15:40.938  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+01-27 05:15:40.938  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+01-27 05:15:40.938  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+01-27 05:15:40.939  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+01-27 05:15:40.939  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+01-27 05:15:40.939  7928  7999 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+01-27 05:15:40.942  7928  7999 D Detox.RNMarker: CREATE_MODULE_END (UIManager)
+01-27 05:15:40.943  7928  7999 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+01-27 05:15:40.944  7928  7999 D nativeloader: Load /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64/libyoga.so using ns clns-7 from class loader (caller=/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk): ok
+01-27 05:15:40.946  7928  7999 D Detox.RNMarker: REACT_BRIDGE_LOADING_END (null)
+01-27 05:15:40.946  7928  7928 D DetoxRNLoading: Listener-proxy method called: onReactContextInitialized
+01-27 05:15:40.946  7928  7928 I DetoxRNLoading: Got new RN-context async'ly through listener
+01-27 05:15:40.947  7928  7928 D DetoxRNLoading: Listener-proxy method called: equals
+01-27 05:15:40.958  7928  7950 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+01-27 05:15:40.960  7928  7970 W ox_react_native: Long monitor contention with owner Instr: androidx.test.runner.AndroidJUnitRunner (7950) at void com.wix.detox.DetoxMain.launchActivityOnCue(android.content.Context, com.wix.detox.ActivityLaunchHelper)(DetoxMain.kt:51) waiters=0 in void com.wix.detox.DetoxMain$setupActionHandlers$SynchronizedActionHandler.handle(java.lang.String, long) for 436ms
+01-27 05:15:40.962  7928  7928 W ox_react_native: Accessing hidden field Landroid/app/Activity;->mResultCode:I (unsupported, reflection, allowed)
+01-27 05:15:40.962  7928  7928 W ox_react_native: Accessing hidden field Landroid/app/Activity;->mResultData:Landroid/content/Intent; (unsupported, reflection, allowed)
+01-27 05:15:40.963  7928  7999 I flipper : flipper: FlipperClient::addPlugin Fresco
+01-27 05:15:40.963  7928  7928 W ox_react_native: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+01-27 05:15:40.964  7928  7928 W ox_react_native: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+01-27 05:15:40.964  7928  7928 W ox_react_native: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+01-27 05:15:40.965  7928  7928 D LifecycleMonitor: Lifecycle status change: com.detox_react_native.MainActivity@e9985b0 in: PAUSED
+01-27 05:15:40.969  7928  7928 I Detox   : Wait is over: App is now idle!
+01-27 05:15:40.970  7928  7950 E TestRunner: failed: runDetoxTests(com.detox_react_native.DetoxTest)
+01-27 05:15:40.971  7928  7950 E TestRunner: ----- begin exception -----
+01-27 05:15:40.971  7928  7950 E TestRunner: java.lang.NoClassDefFoundError: Failed resolution of: Lkotlin/enums/EnumEntriesKt;
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.reactnative.idlingresources.factory.IdlingResourcesName.<clinit>(IdlingResourcesName.kt:9)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.unregisterIdlingResources(ReactNativeIdlingResources.kt:115)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.unregisterAll(ReactNativeIdlingResources.kt:45)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources$registerAll$1.invokeSuspend(ReactNativeIdlingResources.kt:33)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:284)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:85)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking(Builders.kt:59)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlocking(Unknown Source:1)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlocking$default(Builders.kt:38)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlocking$default(Unknown Source:1)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.reactnative.idlingresources.ReactNativeIdlingResources.registerAll(ReactNativeIdlingResources.kt:31)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.reactnative.ReactNativeExtension.setupIdlingResources(ReactNativeExtension.kt:144)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.reactnative.ReactNativeExtension.enableOrDisableSynchronization(ReactNativeExtension.kt:131)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.reactnative.ReactNativeExtension.waitForRNBootstrap(ReactNativeExtension.kt:39)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.DetoxMain.launchActivity(DetoxMain.kt:127)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.DetoxMain.launchActivityOnCue(DetoxMain.kt:53)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.DetoxMain.run(DetoxMain.kt:33)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.Detox.runTests(Detox.java:127)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.wix.detox.Detox.runTests(Detox.java:94)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at com.detox_react_native.DetoxTest.runDetoxTests(DetoxTest.java:27)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at androidx.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:522)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+01-27 05:15:40.971  7928  7950 E TestRunner: 	at org

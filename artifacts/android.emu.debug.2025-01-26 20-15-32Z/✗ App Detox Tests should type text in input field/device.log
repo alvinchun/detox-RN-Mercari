@@ -1,0 +1,34 @@
+--------- beginning of main
+01-27 05:15:41.028  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (Timing)
+01-27 05:15:41.029  7928  7998 D Detox.RNMarker: CREATE_MODULE_START (Timing)
+01-27 05:15:41.030  7928  7998 D Detox.RNMarker: CREATE_MODULE_END (Timing)
+01-27 05:15:41.030  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (Timing)
+01-27 05:15:41.032  7928  7950 I MonitoringInstr: Unstopped activity count: 1
+01-27 05:15:41.044  7928  7982 D DetoxWSClient: Received action 'invoke' (ID #1, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["text-welcome",{"type":"boolean","value":false}]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+01-27 05:15:41.048  7928  7928 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+01-27 05:15:41.049  7928  7970 I DetoxDispatcher: Handling action 'invoke' (ID #1)...
+01-27 05:15:41.058  7928  7970 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [text-welcome, false]
+01-27 05:15:41.058  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (AppState)
+01-27 05:15:41.059  7928  7998 D Detox.RNMarker: CREATE_MODULE_START (AppState)
+01-27 05:15:41.059  7928  7998 D Detox.RNMarker: CREATE_MODULE_END (AppState)
+01-27 05:15:41.060  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (AppState)
+01-27 05:15:41.065  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (SourceCode)
+01-27 05:15:41.065  7928  7998 D Detox.RNMarker: CREATE_MODULE_START (SourceCode)
+01-27 05:15:41.066  7928  7998 D Detox.RNMarker: CREATE_MODULE_END (SourceCode)
+01-27 05:15:41.068  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (SourceCode)
+01-27 05:15:41.073  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (BlobModule)
+01-27 05:15:41.073  7928  7998 D Detox.RNMarker: CREATE_MODULE_START (BlobModule)
+01-27 05:15:41.073  7928  7970 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "text-welcome" and view has effective visibility <VISIBLE>)]
+01-27 05:15:41.074  7928  7928 D LifecycleMonitor: Lifecycle status change: com.detox_react_native.MainActivity@e9985b0 in: STOPPED
+01-27 05:15:41.075  7928  7928 D LifecycleMonitor: Lifecycle status change: com.detox_react_native.MainActivity@e9985b0 in: DESTROYED
+01-27 05:15:41.076  7928  7928 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@7fc32c2
+01-27 05:15:41.076  7928  7998 D nativeloader: Load /data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk!/lib/x86_64/libreactnativeblob.so using ns clns-7 from class loader (caller=/data/app/~~gyj-NS6YmRVrQNWdmn4Eyw==/com.detox_react_native-jTyoJ9SWxcgEj4L3VVL1Ug==/base.apk): ok
+01-27 05:15:41.076  7928  7998 D Detox.RNMarker: CREATE_MODULE_END (BlobModule)
+01-27 05:15:41.077  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (BlobModule)
+01-27 05:15:41.078  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_START (WebSocketModule)
+01-27 05:15:41.078  7928  7998 D Detox.RNMarker: CREATE_MODULE_START (WebSocketModule)
+01-27 05:15:41.079  7928  7998 D Detox.RNMarker: CREATE_MODULE_END (WebSocketModule)
+01-27 05:15:41.081  7928  7998 D Detox.RNMarker: NATIVE_MODULE_SETUP_END (WebSocketModule)
+01-27 05:15:41.086  7928  7950 I TestRunner: run finished: 1 tests, 1 failed, 0 ignored
+01-27 05:15:41.089  7928  7970 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+01-27 05:15:41.097  7928  7970 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@a81a23a, (view ha
