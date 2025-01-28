@@ -1,8 +1,8 @@
-import LoginPage from '../pages/LoginPage';
-import HomePage from '../pages/HomePage';
-import ProductPage from '../pages/ProductPage';
-import CartPage from '../pages/CartPage';
-import CheckoutPage from '../pages/CheckoutPage';
+import LoginPage from './pages/LoginPage';
+import HomePage from './pages/HomePage';
+import ProductPage from './pages/ProductPage';
+import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
 
 describe('Remove Product from Cart Test', () => {
     beforeAll(async () => {

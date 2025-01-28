@@ -14,6 +14,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
@@ -30,6 +31,12 @@ buildscript {
     google()
     maven { // (4)
       url("$rootDir/../node_modules/detox/Detox-android")
+    }
+    maven { // (4)
+      url("$rootDir/../node_modules/react-native/android")
+    }
+    maven { // (4)
+      url("$rootDir/../node_modules/jsc-android/dist")
     }
     maven { url 'https://www.jitpack.io' }
    }
